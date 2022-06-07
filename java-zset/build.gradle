@@ -32,10 +32,10 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
+            url = uri("https://maven.pkg.github.com/jiangguilong2000/java-zset")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("PASSWORD")
+                username = project.findProperty("gpr.user") ?: "jiangguilong2000"
+                password = project.findProperty("gpr.key") ?: "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"
             }
         }
     }
